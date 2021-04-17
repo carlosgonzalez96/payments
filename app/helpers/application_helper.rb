@@ -23,4 +23,8 @@ module ApplicationHelper
       "#{base_url}/00000000000000000000000000000000#{base_url_params}"
     end
   end
+
+  def formatted_amount(amount)
+    number_to_currency amount / 100.0
+  end
 end

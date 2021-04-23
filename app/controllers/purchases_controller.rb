@@ -25,7 +25,7 @@ class PurchasesController < ApplicationController
                 card_exp_month: card.exp_month,
                 card_exp_year: card.exp_year,
             )
-            byebug
+            #byebug
             redirect_to root_path, notice: "Your order has been submitted"
 
         else
